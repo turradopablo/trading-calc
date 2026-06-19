@@ -1,80 +1,626 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="es">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2685.6">
-  <style type="text/css">
-    body {background-color: #0d0d10}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p3 {margin: 0.0px 0.0px 4.0px 0.0px; font: 10.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 28.0px '.SF NS'; color: #ececec; -webkit-text-stroke: #ececec}
-    p.p5 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px '.SF NS'; color: #757575; -webkit-text-stroke: #757575; background-color: #ffffff; background-color: rgba(255, 255, 255, 0.071)}
-    p.p6 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p7 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 12.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575; min-height: 15.0px}
-    p.p8 {margin: 0.0px 0.0px 0.0px 0.0px; font: 13.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p9 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; -webkit-text-stroke: #000000; min-height: 13.0px}
-    p.p10 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Helvetica Neue'; color: #ececec; -webkit-text-stroke: #ececec; background-color: #1a1923; min-height: 15.0px}
-    p.p11 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 17.0px 'Helvetica Neue'; color: #ececec; -webkit-text-stroke: #ececec; background-color: #1a1923; min-height: 20.0px}
-    p.p12 {margin: 0.0px 0.0px 8.0px 4.0px; text-indent: -4.0px; font: 10.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p13 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575; min-height: 13.0px}
-    p.p14 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #757575; -webkit-text-stroke: #757575}
-    p.p15 {margin: 0.0px 0.0px 0.0px 0.0px; font: 16.0px '.SF NS'; color: #434343; -webkit-text-stroke: #434343}
-    p.p16 {margin: 0.0px 0.0px 0.0px 0.0px; font: 22.0px '.SF NS'; color: #ececec; -webkit-text-stroke: #ececec; min-height: 26.0px}
-    p.p17 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: right; font: 22.0px '.SF NS'; color: #434343; -webkit-text-stroke: #434343}
-    p.p18 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #df2832; -webkit-text-stroke: #df2832; min-height: 13.0px}
-    p.p19 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #df2832; -webkit-text-stroke: #df2832}
-    p.p20 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #18b763; -webkit-text-stroke: #18b763; min-height: 13.0px}
-    p.p21 {margin: 0.0px 0.0px 0.0px 0.0px; font: 11.0px 'Helvetica Neue'; color: #18b763; -webkit-text-stroke: #18b763}
-    p.p22 {margin: 0.0px 0.0px 0.0px 0.0px; font: 18.0px '.SF NS'; color: #434343; -webkit-text-stroke: #434343}
-    p.p23 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343}
-    p.p24 {margin: 0.0px 0.0px 0.0px 0.0px; text-align: center; font: 10.0px 'Helvetica Neue'; color: #434343; -webkit-text-stroke: #434343; min-height: 12.0px}
-    span.s1 {font-kerning: none; background-color: #14141b}
-    span.s2 {font-kerning: none}
-    span.s3 {vertical-align: -1.0px; font-kerning: none}
-    span.s4 {font-kerning: none; background-color: #1a1923}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Trading USD→EUR">
+<title>Trading USD→EUR</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+
+  :root {
+    --bg: #0f0f14;
+    --bg2: #1a1a24;
+    --bg3: #22222f;
+    --border: rgba(255,255,255,0.08);
+    --text: #f0f0f0;
+    --muted: #888;
+    --dim: #555;
+    --green: #00c076;
+    --red: #e84040;
+    --gold: #f0a500;
+    --blue: #4a9eff;
+    --radius: 12px;
+    --radius-sm: 8px;
+  }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+    min-height: 100vh;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+
+  .header {
+    background: var(--bg2);
+    border-bottom: 0.5px solid var(--border);
+    padding: 52px 20px 16px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+  }
+
+  .header h1 { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+  .header .subtitle { font-size: 12px; color: var(--muted); margin-top: 2px; }
+
+  .content { padding: 16px 16px 32px; }
+
+  /* Rate card */
+  .rate-card {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+  }
+
+  .rate-header {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .rate-label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 4px; }
+
+  .rate-value { display: flex; align-items: baseline; gap: 8px; }
+
+  .rate-number { font-size: 28px; font-weight: 600; letter-spacing: -0.5px; }
+
+  .rate-badge { font-size: 11px; padding: 2px 8px; border-radius: 20px; font-weight: 500; }
+  .badge-ok      { background: rgba(0,192,118,0.15); color: var(--green); }
+  .badge-error   { background: rgba(232,64,64,0.15); color: var(--red); }
+  .badge-loading { background: rgba(255,255,255,0.07); color: var(--muted); }
+  .badge-manual  { background: rgba(74,158,255,0.15); color: var(--blue); }
+
+  .rate-date { font-size: 11px; color: var(--dim); margin-top: 3px; }
+
+  .btn-refresh {
+    background: var(--bg3);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--muted);
+    font-size: 12px;
+    padding: 6px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* Manual toggle — siempre visible y activable */
+  .manual-toggle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+    padding-top: 12px;
+    border-top: 0.5px solid var(--border);
+    cursor: pointer;
+  }
+
+  .manual-toggle label { font-size: 13px; color: var(--muted); flex: 1; cursor: pointer; }
+
+  .toggle-switch { position: relative; width: 42px; height: 24px; flex-shrink: 0; }
+  .toggle-switch input { opacity: 0; width: 0; height: 0; position: absolute; }
+
+  .toggle-track {
+    position: absolute;
+    inset: 0;
+    background: var(--bg3);
+    border: 0.5px solid var(--border);
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.2s, border-color 0.2s;
+  }
+
+  .toggle-track::after {
+    content: '';
+    position: absolute;
+    left: 3px; top: 3px;
+    width: 16px; height: 16px;
+    background: var(--muted);
+    border-radius: 50%;
+    transition: transform 0.2s, background 0.2s;
+  }
+
+  .toggle-switch input:checked + .toggle-track { background: rgba(74,158,255,0.2); border-color: var(--blue); }
+  .toggle-switch input:checked + .toggle-track::after { transform: translateX(18px); background: var(--blue); }
+
+  .manual-input-wrap {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.25s ease, opacity 0.2s;
+    opacity: 0;
+  }
+
+  .manual-input-wrap.open { max-height: 80px; opacity: 1; }
+
+  .manual-input-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 12px;
+  }
+
+  .manual-input-row label { font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  .manual-input-row input {
+    flex: 1;
+    background: var(--bg3);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius-sm);
+    color: var(--text);
+    font-size: 17px;
+    font-weight: 500;
+    padding: 8px 12px;
+    outline: none;
+    text-align: right;
+    font-family: inherit;
+  }
+
+  .manual-input-row input:focus { border-color: var(--blue); }
+  .manual-unit { font-size: 13px; color: var(--muted); white-space: nowrap; }
+
+  /* Section label */
+  .section-label {
+    font-size: 10px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    margin: 16px 0 8px 4px;
+  }
+
+  /* Input rows — título arriba, valor USD abajo izq, EUR abajo der */
+  .input-card {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    margin-bottom: 12px;
+  }
+
+  .input-row {
+    padding: 12px 16px;
+    border-bottom: 0.5px solid var(--border);
+  }
+
+  .input-row:last-child { border-bottom: none; }
+
+  .row-title {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .title-neutral { color: var(--muted); }
+  .title-red     { color: var(--red); }
+  .title-green   { color: var(--green); }
+
+  .row-values {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .usd-input-wrap {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .curr-sym { font-size: 16px; color: var(--dim); font-weight: 500; flex-shrink: 0; }
+
+  .usd-input-wrap input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 500;
+    outline: none;
+    min-width: 0;
+    font-family: inherit;
+    letter-spacing: -0.3px;
+    padding-right: 2px;
+    width: 100%;
+  }
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+    margin-left: 4px;
+    opacity: 0.4;
+  }
+
+  .eur-val {
+    font-size: 22px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: var(--dim);
+    letter-spacing: -0.3px;
+    text-align: right;
+    flex-shrink: 0;
+    max-width: 45%;
+  }
+
+  .eur-val.active-neutral { color: var(--muted); }
+  .eur-val.active-red     { color: var(--red); }
+  .eur-val.active-green   { color: var(--green); }
+
+  /* Capital */
+  .capital-card {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 16px;
+    margin-bottom: 16px;
+  }
+
+  .capital-card .row-title { margin-bottom: 8px; }
+
+  .capital-row { display: flex; align-items: center; gap: 4px; }
+
+  .capital-card input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 22px;
+    font-weight: 500;
+    outline: none;
+    font-family: inherit;
+    letter-spacing: -0.3px;
+  }
+
+  .capital-card .curr-sym { font-size: 18px; color: var(--dim); }
+
+  /* Results */
+  .results { display: none; }
+  .results.visible { display: block; }
+
+  .results-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+
+  .result-card {
+    background: var(--bg2);
+    border: 0.5px solid var(--border);
+    border-radius: var(--radius);
+    padding: 14px;
+  }
+
+  .r-label { font-size: 10px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin-bottom: 6px; }
+  .r-value { font-size: 22px; font-weight: 600; letter-spacing: -0.3px; }
+  .r-neutral { color: var(--text); }
+  .r-red     { color: var(--red); }
+  .r-green   { color: var(--green); }
+  .r-gold    { color: var(--gold); }
+
+  .ratio-msg {
+    border-radius: var(--radius-sm);
+    padding: 10px 14px;
+    font-size: 13px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    line-height: 1.4;
+  }
+
+  .msg-ok   { background: rgba(0,192,118,0.1);  color: var(--green); border: 0.5px solid rgba(0,192,118,0.2); }
+  .msg-warn { background: rgba(240,165,0,0.1);  color: var(--gold);  border: 0.5px solid rgba(240,165,0,0.2); }
+  .msg-bad  { background: rgba(232,64,64,0.1);  color: var(--red);   border: 0.5px solid rgba(232,64,64,0.2); }
+
+  .footer {
+    font-size: 10px;
+    color: var(--dim);
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.7;
+  }
+
+  svg.icon {
+    width: 13px; height: 13px;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+    vertical-align: -1px; flex-shrink: 0;
+  }
+</style>
 </head>
 <body>
-<h1 style="margin: 0.0px 0.0px 0.0px 0.0px; font: 22.0px '.SF NS'; color: #ececec; -webkit-text-stroke: #ececec"><span class="s1"><b>Trading USD→EUR</b><b></b></span></h1>
-<p class="p2"><span class="s1">Convertidor para Trade Republic</span></p>
-<p class="p3"><span class="s1">TIPO DE CAMBIO USD → EUR</span></p>
-<p class="p4"><span class="s1"><b>—</b><b></b></span></p>
-<p class="p5"><span class="s2">cargando</span></p>
-<p class="p6"><span class="s1">Banco Central Europeo</span></p>
-<p class="p7"><span class="s3"></span><br></p>
-<p class="p2"><span class="s4">Actualizar</span></p>
-<p class="p8"><span class="s1">Tipo de cambio manual</span></p>
-<p class="p9"><span class="s2"></span><br></p>
-<p class="p10"><span class="s2"></span><br></p>
-<p class="p8"><span class="s1">1 USD =</span></p>
-<p class="p11"><span class="s2"></span><br></p>
-<p class="p8"><span class="s1">EUR</span></p>
-<p class="p12"><span class="s2">NIVELES DE LA OPERACIÓN (EN DÓLARES)</span></p>
-<p class="p13"><span class="s3"></span><br></p>
-<p class="p14"><span class="s1">PRECIO DE ENTRADA POR ACCIÓN</span></p>
-<p class="p15"><span class="s1">$</span></p>
-<p class="p16"><span class="s2"></span><br></p>
-<p class="p17"><span class="s1">— €</span></p>
-<p class="p18"><span class="s3"></span><br></p>
-<p class="p19"><span class="s1">STOP LOSS</span></p>
-<p class="p15"><span class="s1">$</span></p>
-<p class="p16"><span class="s2"></span><br></p>
-<p class="p17"><span class="s1">— €</span></p>
-<p class="p20"><span class="s3"></span><br></p>
-<p class="p21"><span class="s1">TAKE PROFIT</span></p>
-<p class="p15"><span class="s1">$</span></p>
-<p class="p16"><span class="s2"></span><br></p>
-<p class="p17"><span class="s1">— €</span></p>
-<p class="p13"><span class="s3"></span><br></p>
-<p class="p14"><span class="s1">CAPITAL DISPONIBLE</span></p>
-<p class="p16"><span class="s2"></span><br></p>
-<p class="p22"><span class="s1">€</span></p>
-<p class="p23"><span class="s2">Tipo de cambio del Banco Central Europeo · Se actualiza cada día hábil a las 16:00 CET<br>
-Valores orientativos · No constituye asesoramiento financiero</span></p>
-<p class="p24"><span class="s2"></span><br></p>
-<p class="p23"><span class="s2">Pablo Turrado · Made with Claude, by Anthropic</span></p>
+
+<div class="header">
+  <div>
+    <h1>Trading USD→EUR</h1>
+    <p class="subtitle">Convertidor para Trade Republic</p>
+  </div>
+</div>
+
+<div class="content">
+
+  <!-- Tipo de cambio -->
+  <div class="rate-card">
+    <div class="rate-header">
+      <div>
+        <p class="rate-label">Tipo de cambio USD → EUR</p>
+        <div class="rate-value">
+          <span class="rate-number" id="rate-number">—</span>
+          <span class="rate-badge badge-loading" id="rate-badge">cargando</span>
+        </div>
+        <p class="rate-date" id="rate-date">Banco Central Europeo</p>
+      </div>
+      <button class="btn-refresh" onclick="fetchRate()">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M23 4v6h-6"/><path d="M1 20v-6h6"/><path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/></svg>
+        Actualizar
+      </button>
+    </div>
+
+    <!-- Toggle manual — siempre activable -->
+    <div class="manual-toggle" onclick="document.getElementById('manual-toggle').click()">
+      <label for="manual-toggle">Tipo de cambio manual</label>
+      <div class="toggle-switch">
+        <input type="checkbox" id="manual-toggle" onclick="event.stopPropagation(); toggleManual()">
+        <div class="toggle-track"></div>
+      </div>
+    </div>
+
+    <div class="manual-input-wrap" id="manual-wrap">
+      <div class="manual-input-row">
+        <label>1 USD =</label>
+        <input type="number" id="manual-rate" placeholder="0.8800" step="0.0001"
+          min="0.01" max="10" inputmode="decimal" oninput="applyManualRate()">
+        <span class="manual-unit">EUR</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Niveles -->
+  <p class="section-label">Niveles de la operación (en dólares)</p>
+
+  <div class="input-card">
+
+    <div class="input-row">
+      <div class="row-title title-neutral">
+        <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        Precio de entrada por acción
+      </div>
+      <div class="row-values">
+        <div class="usd-input-wrap">
+          <span class="curr-sym">$</span>
+          <input type="number" id="entry-usd" placeholder="0.00" step="0.01" inputmode="decimal" oninput="calculate()">
+        </div>
+        <span class="eur-val" id="entry-eur">—&nbsp;€</span>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="row-title title-red">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="23 18 13.5 8.5 8.5 13.5 1 6"/><polyline points="17 18 23 18 23 12"/></svg>
+        Stop Loss
+      </div>
+      <div class="row-values">
+        <div class="usd-input-wrap">
+          <span class="curr-sym">$</span>
+          <input type="number" id="sl-usd" placeholder="0.00" step="0.01" inputmode="decimal" oninput="calculate()">
+        </div>
+        <span class="eur-val" id="sl-eur">—&nbsp;€</span>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="row-title title-green">
+        <svg class="icon" viewBox="0 0 24 24"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"/><polyline points="17 6 23 6 23 12"/></svg>
+        Take Profit
+      </div>
+      <div class="row-values">
+        <div class="usd-input-wrap">
+          <span class="curr-sym">$</span>
+          <input type="number" id="tp-usd" placeholder="0.00" step="0.01" inputmode="decimal" oninput="calculate()">
+        </div>
+        <span class="eur-val" id="tp-eur">—&nbsp;€</span>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Capital -->
+  <div class="capital-card">
+    <div class="row-title title-neutral">
+      <svg class="icon" viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg>
+      Capital disponible
+    </div>
+    <div class="capital-row">
+      <input type="number" id="capital" placeholder="5000" step="100" value="5000" inputmode="decimal" oninput="calculate()">
+      <span class="curr-sym">€</span>
+    </div>
+  </div>
+
+  <!-- Resultados -->
+  <div class="results" id="results">
+    <div class="results-grid">
+      <div class="result-card">
+        <p class="r-label">Acciones</p>
+        <p class="r-value r-neutral" id="res-shares">—</p>
+      </div>
+      <div class="result-card">
+        <p class="r-label">Ratio R/B</p>
+        <p class="r-value" id="res-ratio">—</p>
+      </div>
+      <div class="result-card">
+        <p class="r-label">Riesgo máx.</p>
+        <p class="r-value r-red" id="res-risk">—</p>
+      </div>
+      <div class="result-card">
+        <p class="r-label">Beneficio pot.</p>
+        <p class="r-value r-green" id="res-profit">—</p>
+      </div>
+    </div>
+    <div class="ratio-msg" id="ratio-msg"></div>
+  </div>
+
+  <p class="footer">
+    Tipo de cambio del Banco Central Europeo<br>
+    Se actualiza cada día hábil a las 16:00 CET<br>
+    Valores orientativos · No constituye asesoramiento financiero
+  </p>
+
+</div>
+
+<script>
+let currentRate = null;
+let isManual = false;
+
+async function fetchRate() {
+  if (isManual) return;
+  const badge  = document.getElementById('rate-badge');
+  const number = document.getElementById('rate-number');
+  const date   = document.getElementById('rate-date');
+  badge.className = 'rate-badge badge-loading';
+  badge.textContent = 'cargando';
+
+  const apis = [
+    async () => {
+      const r = await fetch('https://api.frankfurter.app/latest?from=USD&to=EUR');
+      const d = await r.json();
+      return { rate: d.rates.EUR, date: 'BCE · ' + d.date };
+    },
+    async () => {
+      const r = await fetch('https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/usd.json');
+      const d = await r.json();
+      return { rate: d.usd.eur, date: 'BCE · ' + d.date };
+    }
+  ];
+
+  for (const fn of apis) {
+    try {
+      const { rate, date: rd } = await fn();
+      if (rate && rate > 0) {
+        currentRate = rate;
+        number.textContent = rate.toFixed(4);
+        badge.className = 'rate-badge badge-ok';
+        badge.textContent = 'en directo';
+        date.textContent = rd;
+        calculate();
+        return;
+      }
+    } catch(e) {}
+  }
+
+  badge.className = 'rate-badge badge-error';
+  badge.textContent = 'sin conexión';
+  number.textContent = '—';
+  date.textContent = 'Activa el modo manual para continuar';
+}
+
+function toggleManual() {
+  isManual = document.getElementById('manual-toggle').checked;
+  const wrap = document.getElementById('manual-wrap');
+  wrap.className = isManual ? 'manual-input-wrap open' : 'manual-input-wrap';
+
+  if (isManual) {
+    const badge  = document.getElementById('rate-badge');
+    const date   = document.getElementById('rate-date');
+    badge.className = 'rate-badge badge-manual';
+    badge.textContent = 'manual';
+    date.textContent = 'Tipo de cambio introducido manualmente';
+    applyManualRate();
+  } else {
+    currentRate = null;
+    document.getElementById('manual-rate').value = '';
+    fetchRate();
+  }
+}
+
+function applyManualRate() {
+  const val = parseFloat(document.getElementById('manual-rate').value);
+  if (val && val > 0) {
+    currentRate = val;
+    document.getElementById('rate-number').textContent = val.toFixed(4);
+    calculate();
+  }
+}
+
+function usdToEur(usd) {
+  if (!currentRate || !usd || isNaN(usd)) return null;
+  return usd * currentRate;
+}
+
+function setEur(id, val, activeClass) {
+  const el = document.getElementById(id);
+  if (val !== null) {
+    el.textContent = val.toFixed(2) + '\u00a0€';
+    el.className = 'eur-val ' + activeClass;
+  } else {
+    el.textContent = '—\u00a0€';
+    el.className = 'eur-val';
+  }
+}
+
+function calculate() {
+  const entry = parseFloat(document.getElementById('entry-usd').value);
+  const sl    = parseFloat(document.getElementById('sl-usd').value);
+  const tp    = parseFloat(document.getElementById('tp-usd').value);
+  const cap   = parseFloat(document.getElementById('capital').value) || 5000;
+
+  const entryEur = usdToEur(entry);
+  const slEur    = usdToEur(sl);
+  const tpEur    = usdToEur(tp);
+
+  setEur('entry-eur', entryEur, 'active-neutral');
+  setEur('sl-eur',    slEur,    'active-red');
+  setEur('tp-eur',    tpEur,    'active-green');
+
+  const results = document.getElementById('results');
+  if (!entryEur || !slEur || !tpEur) { results.className = 'results'; return; }
+
+  const shares      = Math.floor(cap / entryEur);
+  const riskShare   = Math.abs(entryEur - slEur);
+  const profitShare = Math.abs(tpEur - entryEur);
+  const totalRisk   = riskShare * shares;
+  const totalProfit = profitShare * shares;
+  const ratio       = riskShare > 0 ? profitShare / riskShare : 0;
+
+  document.getElementById('res-shares').textContent = shares + ' acc.';
+  document.getElementById('res-risk').textContent   = '-' + totalRisk.toFixed(2) + ' €';
+  document.getElementById('res-profit').textContent = '+' + totalProfit.toFixed(2) + ' €';
+
+  const ratioEl = document.getElementById('res-ratio');
+  const msgEl   = document.getElementById('ratio-msg');
+  ratioEl.textContent = '1 : ' + ratio.toFixed(2);
+
+  if (ratio < 1) {
+    ratioEl.className = 'r-value r-red';
+    msgEl.className   = 'ratio-msg msg-bad';
+    msgEl.innerHTML   = '<svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg> Ratio muy bajo. Riesgo mayor que beneficio potencial.';
+  } else if (ratio < 2) {
+    ratioEl.className = 'r-value r-gold';
+    msgEl.className   = 'ratio-msg msg-warn';
+    msgEl.innerHTML   = '<svg class="icon" viewBox="0 0 24 24"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg> Ratio inferior a 1:2. Reconsiderar niveles.';
+  } else {
+    ratioEl.className = 'r-value r-green';
+    msgEl.className   = 'ratio-msg msg-ok';
+    msgEl.innerHTML   = '<svg class="icon" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Ratio aceptable. Buena relación riesgo/beneficio.';
+  }
+
+  results.className = 'results visible';
+}
+
+fetchRate();
+</script>
 </body>
 </html>
