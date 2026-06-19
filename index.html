@@ -477,7 +477,7 @@
     Tipo de cambio del Banco Central Europeo<br>
     Se actualiza cada día hábil a las 16:00 CET<br>
     Valores orientativos · No constituye asesoramiento financiero<br>
-    Pablo Turrado
+    Pablo Turrado © · Made with Claude, by Anthropic
   </p>
 
 </div>
@@ -589,14 +589,14 @@ function calculate() {
   const results = document.getElementById('results');
   if (!entryEur || !slEur || !tpEur) { results.className = 'results'; return; }
 
-  const shares      = (capital / entryEur).toFixed(4);
+  const shares      = parseFloat((capital / entryEur).toFixed(4));
   const riskShare   = Math.abs(entryEur - slEur);
   const profitShare = Math.abs(tpEur - entryEur);
   const totalRisk   = riskShare * shares;
   const totalProfit = profitShare * shares;
   const ratio       = riskShare > 0 ? profitShare / riskShare : 0;
 
-  document.getElementById('res-shares').textContent = parseFloat(shares) + ' acc.';
+  document.getElementById('res-shares').textContent = shares + ' acc.';
   document.getElementById('res-risk').textContent   = '-' + totalRisk.toFixed(2) + ' €';
   document.getElementById('res-profit').textContent = '+' + totalProfit.toFixed(2) + ' €';
 
